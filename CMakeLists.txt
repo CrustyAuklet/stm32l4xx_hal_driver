@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(STM32L4xx_hal_driver
-        VERSION 1.10.0
+        VERSION 1.11.0
         DESCRIPTION "STM32L4xx HAL as a CMake package"
         LANGUAGES C ASM)
 
@@ -36,6 +36,7 @@ target_sources(STM32L4xx_HAL INTERFACE
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_gpio.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_i2c.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_lptim.c
+        ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_pka.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_lpuart.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_opamp.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_ll_pwr.c
@@ -101,12 +102,15 @@ if(STM32l4xx_USE_HAL_DRIVER)
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_ospi.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pcd.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pcd_ex.c
+        ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pka.c
+        ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pssi.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pwr.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_pwr_ex.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_qspi.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rcc.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rcc_ex.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rng.c
+        ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rng_ex.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rtc.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_rtc_ex.c
         ${CMAKE_CURRENT_LIST_DIR}/Src/stm32l4xx_hal_sai.c
