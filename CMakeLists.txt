@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(STM32L4xx_hal_driver
-        VERSION 1.11.0
+        VERSION 1.11.1
         DESCRIPTION "STM32L4xx HAL as a CMake package"
         LANGUAGES C ASM)
 
